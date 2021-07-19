@@ -28,4 +28,8 @@ Route::get('/exo3', function () {
     return view('pages.exo3', compact('x', 'y'));
 });
 
+Route::get('couleur/{color}', function(){
+    return view('pages.couleur');
+});
+
 
