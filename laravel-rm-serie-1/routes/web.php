@@ -15,5 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $prenom = "Issam";
-    return view('issam', compact('prenom'));
+    $variable = 24;
+    return view('issam', compact('prenom', 'variable'));
 });
+Route::get
+

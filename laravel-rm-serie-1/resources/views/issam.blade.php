@@ -8,5 +8,12 @@
 </head>
 <body>
     <h2>{{$prenom}}</h2>
+    <div>
+        @if ($variable%4)
+            <h1>{{4 * $variable }}</h1>
+        @else
+            "Pas possible"
+        @endif
+    </div>
 </body>
 </html>
