@@ -18,5 +18,9 @@ Route::get('/', function () {
     $variable = 24;
     return view('issam', compact('prenom', 'variable'));
 });
-Route::get
+Route::get('/exo2', function () {
+    $variable = 24;
+    return view('exo2', compact('prenom', 'variable'));
+});
+
 
