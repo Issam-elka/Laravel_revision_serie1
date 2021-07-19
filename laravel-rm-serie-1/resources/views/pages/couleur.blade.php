@@ -9,13 +9,18 @@
 </head>
 <body>
     <div class="container">
-        <ul>
-            <li>Rouge</li>
-            <li>Jaune</li>
-            <li>Blue</li>
-            <li>Vert</li>
-            <li>Noir</li>
-        </ul>
+        
+        @foreach ($colors as $item)
+        @if ($color == $item)
+            <ul>
+                <li style="font-weight: bold">{{$item}}</li>
+            </ul>
+        @else
+            <ul>
+                <li>{{$item}}</li>
+            </ul>
+        @endif
+        @endforeach
     </div>
 </body>
 

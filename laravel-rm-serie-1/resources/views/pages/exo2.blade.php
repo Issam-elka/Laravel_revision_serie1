@@ -8,8 +8,8 @@
 </head>
 <body>
     <div>
-        @if ($variable%4)
-            <h1>{{4 * $variable }}</h1>
+        @if ($number%4 == 0)
+            <h1>{{4 * $number }}</h1>
         @else
             "Pas possible"
         @endif
