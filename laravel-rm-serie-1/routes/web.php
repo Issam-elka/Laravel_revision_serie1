@@ -20,7 +20,12 @@ Route::get('/', function () {
 });
 Route::get('/exo2', function () {
     $variable = 24;
-    return view('exo2', compact('prenom', 'variable'));
+    return view('pages.exo2', compact('variable'));
+});
+Route::get('/exo3', function () {
+    $x = 24;
+    $y = 10;
+    return view('pages.exo3', compact('x', 'y'));
 });
 
 
